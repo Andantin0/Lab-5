@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineKraft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="box">Home Page</div>
+            <span class="editable-header">Minecraft Fan Club</span>
+        </div>
+        <div class="block1">
+            <ul>
+                <li><a href="index.html">Grid CSS</a></li>
+                <li><a href="index.html">Flexbox CSS</a></li>
+                <li><a href="index.html">Table</a></li>
+            </ul>
+        </div>
+        <div class="block2">
+            <div class="pentagon-area">
+                <h3>Обчислення площі п'ятикутника</h3>
+                <label for="pentagonSide">Довжина сторони:</label>
+                <input type="number" id="pentagonSide" placeholder="Введіть довжину сторони" min="0">
+                <button id="calculateArea">Обчислити площу</button>
+                <div id="pentagonResult" class="result"></div>
+            </div>
+            <div class="triangle-checker">
+                <h3>Перевірка трикутника</h3>
+                <label for="sideA">Сторона A:</label>
+                <input type="number" id="sideA" placeholder="Введіть довжину сторони A" min="0">
+        
+                <label for="sideB">Сторона B:</label>
+                <input type="number" id="sideB" placeholder="Введіть довжину сторони B" min="0">
+        
+                <label for="sideC">Сторона C:</label>
+                <input type="number" id="sideC" placeholder="Введіть довжину сторони C" min="0">
+        
+                <button id="checkTriangle">Перевірити трикутник</button>
+                <div id="triangleResult" class="result"></div>
+            </div>
+            <div class="list">
+            <h3>Список редагованих блоків</h3>
+            <ol id="editableList">
+                <li>Редагувати текст у блоці 3</li>
+                <li>Редагувати текст у блоці 4</li>
+                <li>Редагувати текст у блоці 5</li>
+                <li>Редагувати текст у блоці header</li>
+            </ol>
+            </div>
+        </div>
+        <div class="block3">
+            <h3>Опис гри "Майнкрафт"</h3>
+            <p id="minecraftText">
+                Майнкрафт - це гра, в якій створюються цілі світи з блоків. Опис ігрового процесу Майнкрафта можна сформулювати так: гравець подорожує безмежним 3D-світом.
+            </p>
+            <label for="capitalizeToggle">
+                <input type="checkbox" id="capitalizeToggle"> 
+                Увімкнути верхній регістр перших літер слів
+            </label>
+        </div>
+        <div class="block4">
+            <button id="swapButton">Обміняти тексти шапки та низу</button>
+        </div>
+        <div class="block5">
+            <div class="box">Mojang</div>
+            <p class="editable-text">Свято наближається</p>
+        </div>
+    </div>
+</body>
+</html>
